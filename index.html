@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+
+<body class="tema1">
+  <div class="corpo">
+    <div id="titulo">calc</div>
+    <div id="palavra_tema">THEME</div>
+    <div class="numero_opcao">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <div class="seletor" onclick="trocar_tema()">
+      <input type="radio" name="tema" id="tema1">
+      <input type="radio" name="tema" id="tema2">
+      <input type="radio" name="tema" id="tema3">
+      <div class="indicador"></div>
+    </div>
+
+    <div class="display">
+      <div id="resultado"></div>
+    </div>
+
+    <div class="teclado">
+      <div class="linha">
+        <div class="botao" onclick="acrescentar(7)">
+          <div>7</div>
+        </div>
+        <div class="botao" onclick="acrescentar(8)">
+          <div>8</div>
+        </div>
+        <div class="botao" onclick="acrescentar(9)">
+          <div>9</div>
+        </div>
+        <div class="botao botaodel" onclick="deletar()">
+          <div>DEL</div>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="botao" onclick="acrescentar(4)">
+          <div>4</div>
+        </div>
+        <div class="botao" onclick="acrescentar(5)">
+          <div>5</div>
+        </div>
+        <div class="botao" onclick="acrescentar(6)">
+          <div>6</div>
+        </div>
+        <div class="botao" onclick="verificacao('+')">
+          <div>+</div>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="botao" onclick="acrescentar(1)">
+          <div>1</div>
+        </div>
+        <div class="botao" onclick="acrescentar(2)">
+          <div>2</div>
+        </div>
+        <div class="botao" onclick="acrescentar(3)">
+          <div>3</div>
+        </div>
+        <div class="botao" onclick="verificacao('-')">
+          <div>-</div>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="botao" onclick="verificacao('.')">
+          <div>.</div>
+        </div>
+        <div class="botao" onclick="acrescentar(0)">
+          <div>0</div>
+        </div>
+        <div class="botao" onclick="verificacao('/')">
+          <div>/</div>
+        </div>
+        <div class="botao" onclick="verificacao('x')">
+          <div>x</div>
+        </div>
+      </div>
+      <div class="linha">
+        <div class="botaoreset" onclick="reset()">
+          <div>RESET</div>
+        </div>
+        <div class="botaoigual" onclick="calcular()">
+          <div>=</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a class="link" href="https://github.com/GeovanePDSF" target="_blank">Geovane Pereira</a>.
+  </div>
+
+  <script type="text/javascript" src="./javascript/script.js"></script>
+</body>
+
+</html>

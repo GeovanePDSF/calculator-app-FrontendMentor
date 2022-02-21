@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+
+
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Spartan', sans-serif;
+}
+
+.corpo {
+    height: 640px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#titulo {
+    position: absolute;
+    font-size: 30px;
+}
+
+#palavra_tema {
+    position: absolute;
+    right: 80px;
+    top: 22px;
+    font-size: 10px;
+}
+
+.numero_opcao {
+    top:0px;
+    position: absolute;
+    right: 15px;
+    font-size: 10px;
+}
+
+    .numero_opcao div {
+        display: inline-block;
+        margin-left: 11px;
+    }
+
+.seletor {
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    border-radius: 8px;
+    right: 10px;
+    top: 18px;
+    cursor: pointer;
+}
+    .indicador {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        top: 2px;
+        transition: 0.5s;
+    }
+
+    input[name="tema"]{
+        display: none;
+    }    
+
+.display {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    border-radius: 8px;
+    top: 10%;
+}
+
+
+    #resultado {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 54px;
+    }
+
+.teclado {
+    position: absolute;
+    width: 100%;
+    height: 69%;
+    border-radius: 8px;
+    top: 31%;
+}
+
+.linha {
+    height: 12%;
+    margin-top: 6.30%;
+}
+
+.botao {
+    top: 10px;
+    left: 10px;
+    width: 18.5%;
+    height: 100%;
+    border-radius: 8px;
+    margin-left: 5%;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 32px;
+}
+    .botao div, .botaoreset div, .botaoigual div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+.botaoreset, .botaoigual {
+    position: relative;
+    width: 42%;
+    height: 100%;
+    border-radius: 8px;
+    display:inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 5.33%;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 2px;
+    font-size: 14px;
+}
+
+/* Tema 1 ------------------------------------------------------------------------------------ */
+
+body.tema1 {
+    background-color: hsl(222, 26%, 31%);
+}
+
+body.tema1 .teclado, body.tema1 .seletor {
+    background-color: hsl(223, 31%, 20%);
+}
+
+body.tema1 .display {
+    background-color: hsl(224, 36%, 15%);
+}
+
+body.tema1 .botao {
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 4px hsl(28, 16%, 65%);
+}
+
+body.tema1 .botaodel, body.tema1 .botaoreset {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+}
+
+body.tema1 .botaoigual{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 4px hsl(6, 70%, 34%);
+}
+
+body.tema1 .indicador {
+    background-color: hsl(6, 63%, 50%);
+}
+
+body.tema1 .botao {
+    color: hsl(221, 14%, 31%);
+}
+
+body.tema1 .botaodel, body.tema1 .botaoreset, body.tema1 .botaoigual, body.tema1 #palavra_tema, body.tema1 .numero_opcao, body.tema1 #titulo, body.tema1 #resultado {
+    color: white;
+}
+
+body.tema1 .attribution {
+    color: white;
+}
+
+body.tema1 .link{
+    color: aqua;
+}
+
+body.tema1 .indicador{
+    left: 3%;
+}
+
+/* Tema 2 ------------------------------------------------------------------------------------ */
+
+body.tema2 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+body.tema2 .teclado, body.tema2 .seletor {
+    background-color: hsl(0, 5%, 81%);
+}
+
+body.tema2 .display {
+    background-color: hsl(0, 0%, 93%);
+}
+
+body.tema2 .botao {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 4px hsl(35, 11%, 61%);
+}
+
+body.tema2 .botaodel, body.tema2 .botaoreset {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0px 4px hsl(185, 58%, 25%);
+}
+
+body.tema2 .botaoigual {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0px 4px hsl(25, 99%, 27%);
+}
+
+body.tema2 .indicador {
+    background-color: hsl(25, 98%, 40%);
+}
+
+body.tema2 .botao, body.tema2 #palavra_tema, body.tema2 .numero_opcao, body.tema2 #titulo, body.tema2 #resultado {
+    color: hsl(60, 10%, 19%);
+}
+
+body.tema2 .botaoigual, body.tema2 .botaodel, body.tema2 .botaoreset {
+    color: white;
+}
+
+body.tema2 .indicador{
+    left: 33.33%;
+}
+
+/* Tema 2 ------------------------------------------------------------------------------------ */
+
+body.tema3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+body.tema3 .teclado, body.tema3 .seletor, body.tema3 .display {
+    background-color: hsl(268, 71%, 12%);
+}
+
+body.tema3 .botao {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0px 4px hsl(290, 70%, 36%);
+}
+
+body.tema3 .botaodel, body.tema3 .botaoreset {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 4px hsl(285, 91%, 52%);
+}
+
+body.tema3 .botaoigual {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0px 4px hsl(177, 92%, 70%);
+}
+
+body.tema3 .indicador{
+    background-color: hsl(176, 100%, 44%);
+}
+
+body.tema3 .botao, body.tema3 #palavra_tema, body.tema3 .numero_opcao, body.tema3 #titulo, body.tema3 #resultado {
+    color: hsl(52, 100%, 62%);
+}
+
+body.tema3 .botaodel, body.tema3 .botaoreset {
+    color: white;
+}
+
+body.tema3 .botaoigual {
+    color: hsl(198, 20%, 13%);
+}
+
+body.tema3 .attribution {
+    color: white;
+}
+
+body.tema3 .link{
+    color: aqua;
+}
+
+body.tema3 .indicador{
+    left: 66.66%;
+}
